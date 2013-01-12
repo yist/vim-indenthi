@@ -95,3 +95,6 @@ endfunction
 function! IndentationHighlightOff()
   hi! link cIndLvl NONE
 endfunction
+
+command! -nargs=0 Indhi call IndentationHighlight()
+command! -nargs=0 Indhioff call IndentationHighlightOff()
